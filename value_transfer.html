@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <textarea></textarea><br><br>
+
+    <button id="btn">Click Me</button>
+
+    <p id="msg">This is placeholder</p>
+
+    <script>
+        $("#btn").click(function() {
+            let text = $("textarea").val();
+            $("#msg").text(text);
+        });
+    </script>
+
+</body>
+</html>

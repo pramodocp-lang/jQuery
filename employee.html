@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <input type="text" name="name"><br><br>
+    <select name="name">
+		<option value="IT">IT</option>
+		<option value="HR">HR</option>
+		<option value="BD">BD</option>
+	</select>
+	
+	<br><br>
+
+    <button id="btn">Click Me</button>
+
+    <p id="msg">This is placeholder</p>
+
+    <script>
+        $("#btn").click(function() {
+            let name = $("input[name='name']").val();
+            let dept = $("select").val();
+            $("#msg").html(name + "<br>" + dept);
+        });
+    </script>
+
+</body>
+</html>
